@@ -8,13 +8,18 @@ interface model {
     };
 
     gamePage: {
-
+        currentNumber: number;
+        currentNumberDisplay: string;
+        numbers: (number | undefined)[];
+        hasSetNumber: false;
+        feedback: string;
+        winOrLoss: boolean;
     };
 }
 
 //model
 let model = {
-    currentPage: "main",
+    currentPage: "game",
     
     mainPage: {
         sidebar: false,
@@ -22,6 +27,11 @@ let model = {
     },
 
     gamePage: {
-
+        currentNumber: 0,
+        currentNumberDisplay: "000",
+        numbers: [] as number[],
+        hasSetNumber: true,
+        feedback: "",
+        winOrLoss: false,
     },
 };

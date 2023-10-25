@@ -45,3 +45,104 @@
     grid-area: bottom;
     background-color: lightskyblue;
 }
+
+body {
+    background-color: cadetblue;
+}
+
+.gamePageContainer {
+    display: grid;
+    grid-template-columns: 120px auto 150px;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 
+        'left numbers .'
+        'left display .'
+        'left . button' 
+}
+
+.gamePageLeft {
+    grid-area: left;
+    /* background-color: aqua; */
+}
+.gamePageNumbers {
+    grid-area: numbers;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Lucida Console', sans-serif;
+    font-size: 4em;
+    color: tomato;
+}
+
+.gamePageDisplay {
+    grid-area: display;
+    /* background-color: tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+}
+
+.gamePageButton {
+    grid-area: button;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamePageLine {
+    display: flex;
+    width: 100px;
+}
+
+.gamePagePlace {
+    border: solid gray 1px;
+    border-radius: 3px 0px 0px 3px;
+    margin-top: 4px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: tomato;
+}
+
+.gamePageNumber {
+    border: solid gray 1px;
+    border-radius: 0px 3px 3px 0px;
+    margin-top: 4px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+
+.numbersButton {
+    height: 60px;
+    width: 110px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Lucida Console', sans-serif;
+    background-color: #4682b4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.numbersButtonDisabled {
+    height: 60px;
+    width: 110px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Lucida Console', sans-serif;
+    background-color: #3c6e97;
+    padding: 10px 20px;
+    border: none;
+}
+
+.numbersButton:hover {
+    background-color: #ff6347;
+}

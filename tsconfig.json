@@ -8,6 +8,7 @@
       "forceConsistentCasingInFileNames": true,
       "outDir": "./js",
       "rootDir": "./ts",
+      "lib": ["es6", "dom", "es2017"],
     },
     "include": ["ts/**/*.ts"],
     "exclude": ["node_modules"]

@@ -103,6 +103,7 @@ body {
     border-radius: 3px 0px 0px 3px;
     margin-top: 4px;
     width: 30px;
+    height: 20px;
     display: flex;
     justify-content: center;
     background-color: tomato;
@@ -113,10 +114,26 @@ body {
     border-radius: 0px 3px 3px 0px;
     margin-top: 4px;
     width: 70px;
+    height: 20px;
     display: flex;
     justify-content: center;
     background-color: #eeeeee;
 }
+
+ @media screen and (max-width: 400px) {
+    .gamePagePlace {
+        width: 40px;
+        height: 30px;
+        align-items: center;
+        font-size: large;
+    }
+    .gamePageNumber {
+        width: 100px;
+        height: 30px;
+        align-items: center;
+        font-size: large;
+    }
+  }
 
 .numbersButton {
     height: 60px;
